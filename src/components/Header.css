@@ -1,0 +1,32 @@
+.oy-header {
+    background: #1c1c1c;
+    padding: 20px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.oy-logo-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    color: #ffcd3c;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: 1px;
+    text-align: left;
+    /* Default desktop */
+}
+
+/* On mobile: center the text */
+@media (max-width: 768px) {
+    .oy-header {
+        padding: 15px 0;
+        /* Less padding on mobile */
+        text-align: center;
+    }
+
+    .oy-logo-text {
+        text-align: center;
+    }
+}
