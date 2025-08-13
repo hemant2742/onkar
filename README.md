@@ -1,171 +1,70 @@
-# Onkar Yadav - Comedy Website
+# Getting Started with Create React App
 
-A modern, responsive website showcasing Indian comedian Onkar Yadav's comedy shows, performances, and booking information. Built with React and designed with a professional, engaging interface similar to InkedTree's show display style.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## 🎭 Features
+## Available Scripts
 
-### Home Page
-- **Hero Section**: Eye-catching introduction with call-to-action buttons
-- **Statistics**: Showcase of Onkar's achievements and experience
-- **Featured Shows**: Highlighted upcoming performances
-- **About Preview**: Brief introduction to Onkar's comedy style
-- **Social Media Integration**: Links to Instagram, Twitter, and YouTube
+In the project directory, you can run:
 
-### Shows Page
-- **Comprehensive Show Listings**: Detailed information about upcoming performances
-- **Advanced Filtering**: Search by show title, venue, category, and city
-- **Show Categories**: Stand-up, Corporate, Family, Workshops, Open Mic
-- **Booking Integration**: Direct ticket booking functionality
-- **Show Details**: Date, time, venue, pricing, and audience capacity
+### `npm start`
 
-### About Page
-- **Personal Story**: Journey from humble beginnings to comedy success
-- **Career Milestones**: Timeline of key achievements and breakthroughs
-- **Comedy Style**: Philosophy and approach to humor
-- **Testimonials**: Client and audience feedback
-- **Social Media Presence**: Multiple platform connections
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-### Contact Page
-- **Contact Form**: Professional inquiry and booking form
-- **Contact Information**: Multiple ways to reach Onkar
-- **Booking Information**: Pricing and service details
-- **FAQ Section**: Common questions and answers
-- **Quick Contact Options**: Live chat and consultation booking
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-## 🚀 Technology Stack
+### `npm test`
 
-- **Frontend**: React 18
-- **Routing**: React Router DOM
-- **Styling**: CSS3 with modern design principles
-- **Icons**: Lucide React
-- **Responsive Design**: Mobile-first approach
-- **Performance**: Optimized images and smooth animations
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-## 📱 Design Features
+### `npm run build`
 
-- **Modern UI/UX**: Clean, professional design with gradient accents
-- **Responsive Layout**: Optimized for all device sizes
-- **Smooth Animations**: Hover effects and transitions
-- **Accessibility**: Proper focus states and semantic HTML
-- **Performance**: Fast loading and smooth interactions
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-## 🛠️ Installation & Setup
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-### Prerequisites
-- Node.js (version 14 or higher)
-- npm or yarn package manager
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### Installation Steps
+### `npm run eject`
 
-1. **Clone the repository**
-   ```bash
-   git clone <repository-url>
-   cd onkar-yadav-comedy
-   ```
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-2. **Install dependencies**
-   ```bash
-   npm install
-   ```
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-3. **Start the development server**
-   ```bash
-   npm start
-   ```
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-4. **Open your browser**
-   Navigate to `http://localhost:3000`
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-### Build for Production
+## Learn More
 
-```bash
-npm run build
-```
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-The build files will be created in the `build` folder.
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-## 📁 Project Structure
+### Code Splitting
 
-```
-src/
-├── components/          # Reusable UI components
-│   ├── Navbar.js      # Navigation component
-│   ├── Footer.js      # Footer component
-│   └── *.css          # Component styles
-├── pages/              # Page components
-│   ├── Home.js        # Home page
-│   ├── Shows.js       # Shows listing page
-│   ├── About.js       # About page
-│   ├── Contact.js     # Contact page
-│   └── *.css          # Page styles
-├── App.js              # Main app component
-├── App.css             # Global app styles
-├── index.js            # App entry point
-└── index.css           # Global styles
-```
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-## 🎨 Customization
+### Analyzing the Bundle Size
 
-### Colors
-The website uses a modern color palette:
-- **Primary**: #667eea (Blue)
-- **Secondary**: #764ba2 (Purple)
-- **Accent**: #FFD700 (Gold)
-- **Text**: #333 (Dark Gray)
-- **Background**: #f8f9fa (Light Gray)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Images
-- Replace placeholder images with actual photos of Onkar Yadav
-- Optimize images for web (recommended: WebP format)
-- Maintain aspect ratios for consistent layout
+### Making a Progressive Web App
 
-### Content
-- Update show information with real upcoming performances
-- Modify contact details and social media links
-- Customize testimonials and achievements
-- Update pricing information for different show types
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-## 📱 Responsive Design
+### Advanced Configuration
 
-The website is fully responsive and optimized for:
-- **Desktop**: 1200px and above
-- **Tablet**: 768px - 1199px
-- **Mobile**: 320px - 767px
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-## 🔧 Development
+### Deployment
 
-### Available Scripts
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-- `npm start` - Start development server
-- `npm run build` - Build for production
-- `npm test` - Run tests
-- `npm run eject` - Eject from Create React App
+### `npm run build` fails to minify
 
-### Code Style
-
-- Follow React best practices
-- Use functional components with hooks
-- Maintain consistent CSS naming conventions
-- Ensure accessibility compliance
-
-## 📞 Support & Contact
-
-For technical support or questions about the website:
-- **Email**: support@onkaryadav.com
-- **Phone**: +91 98765 43210
-
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## 🙏 Acknowledgments
-
-- Built with React and modern web technologies
-- Designed for optimal user experience
-- Inspired by professional comedy booking platforms
-- Created to showcase Onkar Yadav's comedy talent
-
----
-
-**Note**: This is a demo website. Replace placeholder content with actual information about Onkar Yadav's shows, contact details, and real images before going live.
-
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
