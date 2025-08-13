@@ -1,14 +1,13 @@
 import React from 'react'
-import { Instagram, Twitter, Youtube } from 'lucide-react'
+import { Instagram, Youtube } from 'lucide-react'
 import './HomePage.css'
 import eventsData from './data.json'
 import bmsIcon from '../assets/bms.png' // Use real BookMyShow PNG
 
 const HomePage = () => {
   const socialLinks = [
-    { icon: <Instagram size={18} />, href: 'https://instagram.com/onkaryadav', color: '#E4405F' },
-    { icon: <Youtube size={18} />, href: 'https://www.youtube.com/@boi_onkar', color: '#FF0000' },
-    { icon: <Twitter size={18} />, href: 'https://twitter.com/onkaryadav', color: '#1DA1F2' }
+    { icon: <Instagram size={18} />, href: 'https://www.instagram.com/boi_onkar/', color: '#E4405F' },
+    { icon: <Youtube size={18} />, href: 'https://www.youtube.com/@boi_onkar', color: '#FF0000' }
   ]
 
   return (
@@ -58,7 +57,7 @@ const HomePage = () => {
 
         {/* Footer */}
         <div className="footer">
-          <p>Nickey</p>
+          <p>Onkar Yadav</p>
         </div>
       </div>
     </div>
