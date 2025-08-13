@@ -1,19 +1,10 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import { Instagram, Twitter, Youtube } from 'lucide-react'
 import './HomePage.css'
-import poster from '../assets/poster.png'
 import eventsData from './data.json'
+import bmsIcon from '../assets/bms.png' // Use real BookMyShow PNG
 
 const HomePage = () => {
-  const [offsetY, setOffsetY] = useState(0)
-
-  const handleScroll = () => setOffsetY(window.pageYOffset)
-
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
-
   const socialLinks = [
     { icon: <Instagram size={18} />, href: 'https://instagram.com/onkaryadav', color: '#E4405F' },
     { icon: <Youtube size={18} />, href: 'https://www.youtube.com/@boi_onkar', color: '#FF0000' },
@@ -22,22 +13,11 @@ const HomePage = () => {
 
   return (
     <div className="homepage">
-      {/* Poster Image with Cinematic Pan */}
-      <img
-        src={poster}
-        alt="poster"
-        className="poster"
-        style={{
-          transform: `translateY(${offsetY * 0.3}px)` // Moves slower than scroll
-        }}
-      />
-
-      {/* Overlay for darkening background */}
+      {/* Overlay */}
       <div className="overlay"></div>
 
       {/* Content */}
       <div className="container">
-        {/* Event Cards */}
         <div className="links-section">
           {eventsData.map((event, idx) => (
             <a
@@ -47,9 +27,14 @@ const HomePage = () => {
               rel="noopener noreferrer"
               className="link-card"
             >
+              <div className="link-icon">
+                <img src={bmsIcon} alt="BookMyShow" />
+              </div>
               <div className="link-content">
                 <h3>{event.cityVenue}</h3>
-                {event.date && <p>{event.date}{event.time ? ` • ${event.time}` : ''}</p>}
+                {event.date && (
+                  <p>{event.date}{event.time ? ` • ${event.time}` : ''}</p>
+                )}
               </div>
             </a>
           ))}

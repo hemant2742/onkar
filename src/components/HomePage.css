@@ -1,20 +1,26 @@
 .homepage {
     min-height: 100vh;
     width: 100%;
-    background-size: cover; /* ensures the poster covers any screen size */
+    background-image: url('../assets/poster.png');
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     position: relative;
     display: flex;
     flex-direction: column;
+    font-family: 'Inter', sans-serif;
 }
 
+/* Cinematic overlay */
 .overlay {
     position: absolute;
     inset: 0;
     background: rgba(0, 0, 0, 0.55);
+    backdrop-filter: blur(2px);
 }
 
+/* Main container */
 .container {
     position: relative;
     z-index: 2;
@@ -22,49 +28,67 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
-    padding: 2rem 1rem;
-    max-width: 500px;
+    gap: 1.4rem;
+    padding: 2rem 1rem 6rem;
+    max-width: 520px;
     margin: 0 auto;
 }
 
-/* BookMyShow cards */
-.links-section {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    width: 100%;
-}
-
+/* Event Cards - Glassmorphic Style */
 .link-card {
-    background: white;
-    border-radius: 16px;
-    padding: 1rem 1.2rem;
+    margin: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    border-radius: 18px;
+    padding: 0.9rem 1.2rem;
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
     text-decoration: none;
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .link-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+    background: rgba(255, 255, 255, 0.15);
 }
 
+.link-icon {
+    background: white;
+    border-radius: 12px;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 46px;
+    height: 46px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+}
+
+.link-icon img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Event Text */
 .link-content h3 {
-    margin: 0 0 0.3rem 0;
-    font-size: 1.15rem;
-    color: #222;
+    margin: 0 0 0.25rem 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #fff;
 }
 
 .link-content p {
     margin: 0;
-    font-size: 0.9rem;
-    color: #555;
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.85);
 }
 
-/* Fixed social links at bottom */
+/* Social bar */
 .social-bar {
     position: fixed;
     bottom: 1.5rem;
@@ -79,34 +103,37 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 38px;
-    height: 38px;
+    width: 42px;
+    height: 42px;
     border-radius: 50%;
     color: white;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .social-btn:hover {
-    transform: scale(1.1);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    transform: scale(1.15) rotate(3deg);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
 }
 
-/* Footer text */
+/* Footer */
 .footer {
-    margin-top: 1rem;
+    margin-top: auto;
     font-size: 0.85rem;
-    color: white;
+    color: rgba(255, 255, 255, 0.85);
     text-align: center;
-    z-index: 2;
+    padding-bottom: 1rem;
+    letter-spacing: 0.5px;
 }
 
-/* Responsive tweaks */
+/* Mobile adjustments */
 @media (max-width: 500px) {
     .link-card {
         padding: 0.8rem 1rem;
+        border-radius: 14px;
     }
     .social-btn {
-        width: 32px;
-        height: 32px;
+        width: 36px;
+        height: 36px;
     }
 }
